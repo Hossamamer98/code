@@ -1,13 +1,13 @@
 import 'dart:io';
 
 void main() {
-  double area;
-  print("enter the raduis: ");
-  double? raduis = double.parse(stdin.readLineSync()!);
+  //Write a program to find whether a given number (accept from the user) is even or odd.
 
-  /// area =22/7*r*r
-  area = 22 / 7 * raduis * raduis;
-  ;
-
-  print('the area of circle:$area');
+  print("enter the number: ");
+  int? num = int.parse(stdin.readLineSync()!);
+  if (num % 2 == 0) {
+    print('the number is even ');
+  } else {
+    print('the number is odd');
+  }
 }
